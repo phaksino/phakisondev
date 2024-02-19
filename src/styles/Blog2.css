@@ -1,0 +1,91 @@
+/* Blog.css */
+
+.blog-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .blog-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .blog-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .explore-blog-btn {
+    background-color: #007bff; /* Accent color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .explore-blog-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Card Layout for Blog Posts */
+  .blog-post-card {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Adjust depending on your images */
+  }
+  
+  .blog-post-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  
+  /* Typography Enhancements */
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h3, .blog-content h4 {
+    color: #333;
+  }
+  
+  .blog-content p {
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .blog-content blockquote {
+    border-left: 4px solid #007bff; /* Accent color */
+    padding-left: 20px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
+  .blog-content ul,
+  .blog-content ol {
+    padding-left: 20px;
+  }
+  
+  .blog-content li {
+    margin-bottom: 10px;
+  }
+  

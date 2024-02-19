@@ -1,0 +1,106 @@
+/* Contact.css */
+
+.contact-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  .contact-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Accent color */
+  }
+  
+  .contact-form button {
+    background-color: #007bff; /* Accent color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+  }
+  
+  /* Social Icons Styling */
+  .follow-me {
+    margin-top: 40px;
+    padding-bottom: 5%;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007bff; /* Accent color */
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #0056b3; /* Darker shade for hover */
+  }
+  
+  /* Optional Map Styling Placeholder */
+  .map-container {
+    margin-top: 30px;
+    /* Adjust the height and width as necessary */
+    height: 300px;
+    width: 100%;
+  }
+  
+  /* Example placeholder for a custom-styled map. You'll likely use an iframe or a JavaScript library like Leaflet for actual implementation */
+  .map-placeholder {
+    background-color: #f0f0f0; /* Placeholder color, replace with map */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #bbb;
+  }
+
+  @media screen and (max-width: 960px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -1000%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      background: #333;
+    }
+    
+  }
+  

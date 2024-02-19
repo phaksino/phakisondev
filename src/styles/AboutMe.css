@@ -1,0 +1,31 @@
+.about-me-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-me-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-me-container p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.connect-button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #0056b3;
+}

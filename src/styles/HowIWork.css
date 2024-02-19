@@ -1,0 +1,51 @@
+.services-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.services-container p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.service-icon {
+  width: 60px; /* Adjust based on your icon size */
+  height: 60px; /* Adjust based on your icon size */
+  margin-bottom: 10px;
+}
+
+.start-project-button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.start-project-button:hover {
+  background-color: #0056b3;
+}

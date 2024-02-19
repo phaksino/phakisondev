@@ -1,0 +1,22 @@
+.blog-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0; /* Light grey background */
+  }
+  
+  .blog-container h2, .blog-container p {
+    margin-bottom: 20px;
+  }
+  
+  .explore-blog-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .explore-blog-btn:hover {
+    background-color: #0056b3;
+  }
+  
