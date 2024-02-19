@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Contact2.css'; // Ensure you create this CSS file for styling
 import Footer from './Footer';
 
