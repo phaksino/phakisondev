@@ -1,0 +1,20 @@
+[build]
+  # Directory to publish (build output)
+  publish = "build"
+
+  # Command to build your site
+  command = "npm run build"
+  
+  # Directory for Netlify Functions
+  functions = "netlify/functions"
+
+# Environment variables can be specified here
+# [build.environment]
+#   NODE_VERSION = "14.15.1"
+#   # Any other environment variables
+
+# Redirects and headers can also be defined
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200

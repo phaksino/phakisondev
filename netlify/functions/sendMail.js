@@ -11,14 +11,14 @@ exports.handler = async (event, context) => {
     // Transporter config. For example, using Gmail:
     service: 'gmail',
     auth: {
-      user: 'your@gmail.com',
-      pass: 'yourpassword', // It's recommended to use OAuth2 or environment variables for security
+      user: 'phakisontseketsii@gmail.com',
+      pass: 'myae dhjp ixwn tfpo', // It's recommended to use OAuth2 or environment variables for security
     },
   });
 
   try {
     const response = await transporter.sendMail({
-      from: 'your@gmail.com', // sender address
+      from: 'phakisontseketsii@gmail.com', // sender address
       to: 'phakisontseketsii@gmail.com', // list of receivers
       subject: "New Contact Form Submission", // Subject line
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`, // plain text body
@@ -31,7 +31,7 @@ exports.handler = async (event, context) => {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to send email" }),
+      body: JSON.stringify({ error: error.message }),
     };
   }
 };
