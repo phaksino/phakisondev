@@ -21,15 +21,32 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Implement form submission logic here
-    console.log(formData);
-    alert('Message sent! We will get back to you soon.');
-  };
+// Instead of logging the formData, send it to the Netlify function
+fetch('/.netlify/functions/sendMail', {
+  method: 'POST',
+  body: JSON.stringify(formData),
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data);
+  alert('Message sent! We will get back to you soon.');
+})
+.catch((error) => {
+  console.error('Error:', error);
+  alert('An error occurred while sending the message.');
+});
+};
 
   return (
     <div className="contact-container">
       <h1>Let's Create Something Amazing Together</h1>
       <p>Ready to take the next step? Reach out and let's discuss how we can bring your project to life.</p>
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" className="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      
         <input
           type="text"
           name="name"
